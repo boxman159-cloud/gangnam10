@@ -14,8 +14,8 @@ interface VenueHeroProps {
 const text = {
   ko: { back: '목록으로', badge: '하이퍼블릭' },
   en: { back: 'Back to list', badge: 'High Public' },
-  zh: { back: '返回列表', badge: 'High Public' },
-  ja: { back: '一覧に戻る', badge: 'ハイパブリック' },
+  cn: { back: '返回列表', badge: 'High Public' },
+  jp: { back: '一覧に戻る', badge: 'ハイパブリック' },
 }
 
 export default function VenueHero({ venue }: VenueHeroProps) {

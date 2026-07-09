@@ -34,7 +34,7 @@ const content = {
     ctaTitle: "We'll Find the Perfect Venue for You",
     ctaDesc: 'Beyond the above, we help you book the best venue in real time based on your preferences and situation. Just let us know your visit time, group size, and preferred atmosphere.',
   },
-  zh: {
+  cn: {
     label: 'RECOMMENDATION GUIDE',
     title: '江南 High Public 场所推荐指南',
     guides: [
@@ -49,7 +49,7 @@ const content = {
     ctaTitle: '为您匹配最合适的场所',
     ctaDesc: '除以上情况外，我们还会根据实时状况及您的个人偏好，为您预约最合适的场所。只需告知到访时间、人数和偏好氛围即可。',
   },
-  ja: {
+  jp: {
     label: 'RECOMMENDATION GUIDE',
     title: '江南 ハイパブリック 施設おすすめガイド',
     guides: [

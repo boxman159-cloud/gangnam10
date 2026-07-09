@@ -32,31 +32,31 @@ const text = {
     pricing: 'Pricing & How to Use', usageFee: '💰 Price', bookNow: 'Enquire Now',
     caution: '⚠️ Please Note',
     cautionItems: ['Entry may be refused without a valid ID.', 'Guests must be aged 20 or above.', 'Outside food and drinks are not permitted.', 'Same-day visits and bookings are welcome.'],
-    contactPerks: ['Instant guidance by phone or KakaoTalk', 'Same-day booking available', 'Tell us your party size and preferred time for tailored guidance'],
+    contactPerks: ['Instant guidance by phone or messenger', 'Same-day booking available', 'Tell us your party size and preferred time for tailored guidance'],
     faqTitle: 'Frequently Asked Questions',
     bookingTitle: 'Reservation & Enquiry',
     bookingDesc: (name: string) => `Contact us by phone or messenger to book ${name}. Same-day bookings welcome.`,
     steps: [{ icon: '💬', label: 'Enquire', desc: 'Share date, party size, venue' }, { icon: '✅', label: 'Confirm', desc: 'Instant availability check' }, { icon: '🎉', label: 'Enjoy', desc: 'Visit and have fun' }],
     notice: '24/7 available · Fast response guaranteed',
   },
-  zh: {
+  cn: {
     intro: '业场介绍', gallery: '📸 照片画廊', features: '主要特点',
     pricing: '使用方式 & 价格', usageFee: '💰 使用费用', bookNow: '预约咨询',
     caution: '⚠️ 使用须知',
     cautionItems: ['未携带身份证件可能无法入场。', '仅限20岁以上人士使用。', '禁止携带外部食物及酒水。', '当天亦可到访及预约。'],
-    contactPerks: ['电话·KakaoTalk咨询即时解答', '可当天预约', '告知人数及希望时间可获定制安排'],
+    contactPerks: ['电话·即时通讯咨询即时解答', '可当天预约', '告知人数及希望时间可获定制安排'],
     faqTitle: '常见问题',
     bookingTitle: '预约 · 咨询',
     bookingDesc: (name: string) => `如需预约${name}，请通过电话或即时通讯直接咨询。当天预约也可以。`,
     steps: [{ icon: '💬', label: '咨询', desc: '告知日期·人数·场所' }, { icon: '✅', label: '确认', desc: '立即告知是否可预约' }, { icon: '🎉', label: '完成', desc: '到访尽情享受' }],
     notice: '24小时全年无休 · 快速响应',
   },
-  ja: {
+  jp: {
     intro: '店舗紹介', gallery: '📸 フォトギャラリー', features: '主な特徴',
     pricing: '料金・利用方法', usageFee: '💰 ご利用料金', bookNow: '予約お問い合わせ',
     caution: '⚠️ ご利用時の注意事項',
     cautionItems: ['身分証をお持ちでない場合、入場をお断りする場合があります。', '満20歳以上のみご利用いただけます。', '外部からの飲食物のお持ち込みは禁止です。', '当日のご来店・ご予約も可能です。'],
-    contactPerks: ['お電話・KakaoTalkですぐにご案内', '当日予約可能', '人数・ご希望時間をお知らせいただければ個別にご案内'],
+    contactPerks: ['お電話・メッセンジャーですぐにご案内', '当日予約可能', '人数・ご希望時間をお知らせいただければ個別にご案内'],
     faqTitle: 'よくある質問',
     bookingTitle: '予約・お問い合わせ',
     bookingDesc: (name: string) => `${name}のご予約はお電話またはメッセンジャーで直接お問い合わせください。当日予約も可能です。`,
@@ -141,10 +141,10 @@ export default function VenueDetailTabs({ venue }: VenueDetailTabsProps) {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { label: lang === 'en' ? 'Location' : lang === 'zh' ? '位置' : lang === 'ja' ? '場所' : '위치', value: venue.location },
-                { label: lang === 'en' ? 'Hours' : lang === 'zh' ? '营业时间' : lang === 'ja' ? '営業時間' : '운영시간', value: operatingHours },
-                { label: lang === 'en' ? 'Age Limit' : lang === 'zh' ? '年龄限制' : lang === 'ja' ? '年齢制限' : '나이제한', value: lang === 'ko' ? `만 ${venue.minAge}세 이상` : `${venue.minAge}+` },
-                { label: lang === 'en' ? 'Dress Code' : lang === 'zh' ? '着装要求' : lang === 'ja' ? 'ドレスコード' : '드레스코드', value: dressCode },
+                { label: lang === 'en' ? 'Location' : lang === 'cn' ? '位置' : lang === 'jp' ? '場所' : '위치', value: venue.location },
+                { label: lang === 'en' ? 'Hours' : lang === 'cn' ? '营业时间' : lang === 'jp' ? '営業時間' : '운영시간', value: operatingHours },
+                { label: lang === 'en' ? 'Age Limit' : lang === 'cn' ? '年龄限制' : lang === 'jp' ? '年齢制限' : '나이제한', value: lang === 'ko' ? `만 ${venue.minAge}세 이상` : `${venue.minAge}+` },
+                { label: lang === 'en' ? 'Dress Code' : lang === 'cn' ? '着装要求' : lang === 'jp' ? 'ドレスコード' : '드레스코드', value: dressCode },
               ].map((info) => (
                 <div key={info.label} className="glass-card rounded-xl p-4 text-center">
                   <div className="text-gray-500 text-xs uppercase tracking-wider mb-1">{info.label}</div>

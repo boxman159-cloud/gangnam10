@@ -13,11 +13,11 @@ const BASE = 'https://gangnam10.com'
 const labels: Record<Lang, { titleSuffix: string; home: string; venues: string }> = {
   ko: { titleSuffix: '예약', home: '홈', venues: '업장' },
   en: { titleSuffix: 'Reservation', home: 'Home', venues: 'Venues' },
-  zh: { titleSuffix: '预约', home: '首页', venues: '场所' },
-  ja: { titleSuffix: '予約', home: 'ホーム', venues: '店舗' },
+  cn: { titleSuffix: '预约', home: '首页', venues: '场所' },
+  jp: { titleSuffix: '予約', home: 'ホーム', venues: '店舗' },
 }
 
-const ogLocale: Record<Lang, string> = { ko: 'ko_KR', en: 'en_US', zh: 'zh_CN', ja: 'ja_JP' }
+const ogLocale: Record<Lang, string> = { ko: 'ko_KR', en: 'en_US', cn: 'zh_CN', jp: 'ja_JP' }
 
 interface Props { params: { lang: Lang; id: string } }
 
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `${name}(${venue.nameEn}). ${venue.location}. ${desc.slice(0, 100)}`,
     keywords: [
       venue.name, venue.nameEn, `${venue.name} 예약`, `${venue.location} 하이퍼블릭`,
-      '강남 하이퍼블릭 예약', '강남 가라오케 예약',
+      '강남 하이퍼블릭 예약', '강남 KTV 예약',
     ],
     openGraph: {
       type: 'website',
@@ -61,8 +61,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: {
         'ko-KR': `${BASE}/venues/${venue.id}`,
         'en-US': `${BASE}/en/venues/${venue.id}`,
-        'zh-CN': `${BASE}/zh/venues/${venue.id}`,
-        'ja-JP': `${BASE}/ja/venues/${venue.id}`,
+        'zh-CN': `${BASE}/cn/venues/${venue.id}`,
+        'ja-JP': `${BASE}/jp/venues/${venue.id}`,
       },
     },
   }

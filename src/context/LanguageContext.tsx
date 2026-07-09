@@ -2,7 +2,7 @@
 
 import { createContext, useContext } from 'react'
 
-export type Lang = 'ko' | 'en' | 'zh' | 'ja'
+export type Lang = 'ko' | 'en' | 'cn' | 'jp'
 
 interface LanguageContextType {
   lang: Lang
@@ -18,9 +18,9 @@ const translations: Record<Lang, Record<string, string>> = {
     'nav.quickBook': '빠른 예약',
 
     // Hero
-    'hero.badge': '강남 No.1 하이퍼블릭 가라오케 예약 플랫폼',
-    'hero.title1': '강남 하이퍼블릭',
-    'hero.title2': '가라오케',
+    'hero.badge': '강남 No.1 하이퍼블릭 예약 플랫폼',
+    'hero.title1': '강남',
+    'hero.title2': '하이퍼블릭',
     'hero.desc': '강남 최고의 하이퍼블릭을 한 번에 예약하세요.',
     'hero.subDesc': '달토·퍼펙트·유앤미·도파민·엘리트·디저트 통합 안내',
     'hero.tableBook': '📞 지금 예약하기',
@@ -65,9 +65,9 @@ const translations: Record<Lang, Record<string, string>> = {
     'nav.faq': 'FAQ',
     'nav.quickBook': 'Book Now',
 
-    'hero.badge': 'Gangnam No.1 High Public Karaoke Booking Platform',
+    'hero.badge': 'Gangnam No.1 High Public KTV Booking Platform',
     'hero.title1': 'Gangnam High Public',
-    'hero.title2': 'Karaoke',
+    'hero.title2': 'KTV',
     'hero.desc': "Book Gangnam's top high public venues in one place.",
     'hero.subDesc': 'Dalto · Perfect · U&ME · Dopamine · Elite · Dessert — all in one guide',
     'hero.tableBook': '📞 Reserve Now',
@@ -87,13 +87,13 @@ const translations: Record<Lang, Record<string, string>> = {
 
     'form.title': 'Reservation &',
     'form.title2': 'Enquiry',
-    'form.desc': 'Contact us by phone or KakaoTalk. Same-day bookings welcome.',
+    'form.desc': 'Contact us by phone or messenger. Same-day bookings welcome.',
     'form.notice': '24/7 available · Same-day booking · Fast response guaranteed',
 
     'faq.title': 'Frequently',
     'faq.title2': 'Asked Questions',
     'faq.desc': 'Get quick answers to common questions',
-    'faq.kakao': '💬 Contact via KakaoTalk',
+    'faq.kakao': '💬 Message Us',
     'faq.moreQuestion': 'Have more questions?',
 
     'tab.intro': 'Overview',
@@ -102,7 +102,7 @@ const translations: Record<Lang, Record<string, string>> = {
     'tab.booking': 'Book',
   },
 
-  zh: {
+  cn: {
     'nav.venues': '场所',
     'nav.guide': '推荐指南',
     'nav.faq': '常见问题',
@@ -130,13 +130,13 @@ const translations: Record<Lang, Record<string, string>> = {
 
     'form.title': '预约 &',
     'form.title2': '咨询',
-    'form.desc': '通过电话或KakaoTalk联系我们，当天预约也可以。',
+    'form.desc': '通过电话或即时通讯联系我们，当天预约也可以。',
     'form.notice': '24小时全年无休 · 当天可预约 · 快速响应',
 
     'faq.title': '常见',
     'faq.title2': '问题',
     'faq.desc': '快速解答您的疑问',
-    'faq.kakao': '💬 通过KakaoTalk咨询',
+    'faq.kakao': '💬 联系我们',
     'faq.moreQuestion': '还有其他问题吗？',
 
     'tab.intro': '介绍',
@@ -145,15 +145,15 @@ const translations: Record<Lang, Record<string, string>> = {
     'tab.booking': '预约',
   },
 
-  ja: {
+  jp: {
     'nav.venues': '店舗',
     'nav.guide': 'おすすめガイド',
     'nav.faq': 'よくある質問',
     'nav.quickBook': '予約する',
 
-    'hero.badge': '江南No.1 ハイパブリックカラオケ予約プラットフォーム',
+    'hero.badge': '江南No.1 ハイパブリックKTV予約プラットフォーム',
     'hero.title1': '江南ハイパブリック',
-    'hero.title2': 'カラオケ',
+    'hero.title2': 'KTV',
     'hero.desc': '江南最高のハイパブリックを一括予約。',
     'hero.subDesc': '달토·퍼펙트·유앤미·도파민·엘리트·디저트 総合案内',
     'hero.tableBook': '📞 今すぐ予約',
@@ -173,13 +173,13 @@ const translations: Record<Lang, Record<string, string>> = {
 
     'form.title': '予約 &',
     'form.title2': 'お問い合わせ',
-    'form.desc': 'お電話またはKakaoTalkでご連絡ください。当日予約も受付中。',
+    'form.desc': 'お電話またはメッセンジャーでご連絡ください。当日予約も受付中。',
     'form.notice': '24時間年中無休 · 当日予約OK · 迅速対応',
 
     'faq.title': 'よくある',
     'faq.title2': '質問',
     'faq.desc': 'よくある疑問をすばやく解決',
-    'faq.kakao': '💬 KakaoTalkでお問い合わせ',
+    'faq.kakao': '💬 お問い合わせ',
     'faq.moreQuestion': 'その他ご質問はありますか？',
 
     'tab.intro': '紹介',

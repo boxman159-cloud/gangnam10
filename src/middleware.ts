@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-const LOCALES = ['en', 'zh', 'ja', 'ko']
+const LOCALES = ['en', 'cn', 'jp', 'ko']
 
 function detectLocale(pathname: string): string | null {
   for (const l of LOCALES) {

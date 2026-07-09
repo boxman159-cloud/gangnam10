@@ -56,9 +56,9 @@ const content = {
     intlDesc: 'Our platform has dedicated staff fluent in English, Chinese, and Japanese for our global guests. No language barriers, no complicated booking process — we provide full care from your first enquiry to same-day guidance.',
     intlBadge: 'For International Guests',
     careTitle: 'International Guest Care Services',
-    careItems: ['Multilingual dedicated staff', 'On-site guidance & escort support', 'Advance pricing & usage briefing', 'Real-time KakaoTalk communication', 'Same-day booking & instant confirmation', 'Dedicated care for solo visitors'],
+    careItems: ['Multilingual dedicated staff', 'On-site guidance & escort support', 'Advance pricing & usage briefing', 'Real-time WeChat/LINE/WhatsApp communication', 'Same-day booking & instant confirmation', 'Dedicated care for solo visitors'],
   },
-  zh: {
+  cn: {
     sectionBadge: '选择我们的理由',
     sectionTitle: '为什么要通过',
     sectionTitleGradient: '我们',
@@ -83,9 +83,9 @@ const content = {
     intlDesc: '我们的平台为全球客户配备了能够用英语、中文、日语沟通的专属工作人员。无需担心语言障碍或复杂的预约流程，从咨询到当天引导，我们将亲切而完善地为您全程服务。',
     intlBadge: 'For International Guests',
     careTitle: '外国人专属服务',
-    careItems: ['多语言专属工作人员', '现场引导及陪同支持', '提前告知使用方法和价格', '实时KakaoTalk沟通', '当天预约及即时确认', '单人客人专属关怀'],
+    careItems: ['多语言专属工作人员', '现场引导及陪同支持', '提前告知使用方法和价格', '实时微信/LINE/WhatsApp沟通', '当天预约及即时确认', '单人客人专属关怀'],
   },
-  ja: {
+  jp: {
     sectionBadge: '選ぶ理由',
     sectionTitle: 'なぜ',
     sectionTitleGradient: '私たちを通じて',
@@ -110,7 +110,7 @@ const content = {
     intlDesc: '私たちのプラットフォームにはグローバルなお客様のために英語·中国語·日本語でコミュニケーションできる専任スタッフを配置しています。言語の壁や複雑な予約手続きの心配なく、お問い合わせから当日案内まで親切かつ完璧にケアいたします。',
     intlBadge: 'For International Guests',
     careTitle: '外国人専用ケアサービス',
-    careItems: ['多言語対応専任スタッフ配置', '現場案内および同行サポート', '利用方法・料金の事前案内', 'リアルタイムKakaoTalkサポート', '当日予約および即時確認', 'お一人様専用ケア'],
+    careItems: ['多言語対応専任スタッフ配置', '現場案内および同行サポート', '利用方法・料金の事前案内', 'リアルタイムWeChat/LINE/WhatsAppサポート', '当日予約および即時確認', 'お一人様専用ケア'],
   },
 }
 

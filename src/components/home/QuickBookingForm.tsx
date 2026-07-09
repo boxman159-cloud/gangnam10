@@ -17,12 +17,12 @@ export default function QuickBookingForm() {
       { icon: '✅', title: 'Confirm', desc: 'Our team checks availability immediately and gets back to you.' },
       { icon: '🎉', title: 'Done', desc: 'Once confirmed, just follow the on-the-day instructions and enjoy!' },
     ],
-    zh: [
+    cn: [
       { icon: '💬', title: '咨询', desc: '通过电话或即时通讯告知日期、人数和希望的场所。' },
       { icon: '✅', title: '确认', desc: '工作人员立即确认后为您告知预约是否可行。' },
       { icon: '🎉', title: '完成', desc: '预约确认后按当天指引轻松到访即可。' },
     ],
-    ja: [
+    jp: [
       { icon: '💬', title: 'お問い合わせ', desc: 'お電話またはメッセンジャーで日程・人数・ご希望の店舗をお伝えください。' },
       { icon: '✅', title: '確認', desc: '担当者がすぐに確認し、予約可否をご案内します。' },
       { icon: '🎉', title: '完了', desc: '予約確定後、当日の案内に従ってお気軽にご来場ください。' },

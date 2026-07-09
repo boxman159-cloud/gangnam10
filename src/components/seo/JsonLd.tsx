@@ -7,7 +7,7 @@ export function OrganizationJsonLd() {
     name: '강남 하이퍼블릭',
     alternateName: 'Gangnam High Public',
     url: 'https://gangnam10.com',
-    description: '강남 하이퍼블릭 가라오케 통합 예약 안내. 달토, 퍼펙트, 유앤미, 도파민, 엘리트, 디저트 예약 전문.',
+    description: '강남 하이퍼블릭 통합 예약 안내. 달토, 퍼펙트, 유앤미, 도파민, 엘리트, 디저트 예약 전문.',
     telephone: '010-9778-8571',
     areaServed: ['강남구', '서초구', '역삼동', '논현동', '삼성동', '대치동'],
     sameAs: [],
@@ -33,7 +33,7 @@ export function WebSiteJsonLd() {
     '@type': 'WebSite',
     name: '강남 하이퍼블릭',
     url: 'https://gangnam10.com',
-    description: '강남 하이퍼블릭 가라오케 예약 전문 플랫폼',
+    description: '강남 하이퍼블릭 예약 전문 플랫폼',
     inLanguage: ['ko', 'en', 'zh', 'ja'],
   }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />

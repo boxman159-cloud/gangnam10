@@ -13,24 +13,24 @@ const BASE = 'https://gangnam10.com'
 
 const meta: Record<Lang, { title: string; description: string; ogDescription: string }> = {
   ko: {
-    title: '강남 하이퍼블릭 가라오케 예약 | 달토·퍼펙트·유앤미·도파민·엘리트·디저트',
-    description: '강남 가라오케·하이퍼블릭 통합 예약. 달토·퍼펙트·유앤미·도파민·엘리트·디저트 6곳 상황별 추천. 24시간 당일 예약 가능 ☎ 010-9778-8571',
-    ogDescription: '강남 하이퍼블릭 가라오케 통합 정보 사이트. 달토, 퍼펙트, 유앤미, 도파민, 엘리트, 디저트 예약 안내.',
+    title: '강남 하이퍼블릭 예약 | 달토·퍼펙트·유앤미·도파민·엘리트·디저트',
+    description: '강남 하이퍼블릭 통합 예약. 달토·퍼펙트·유앤미·도파민·엘리트·디저트 6곳 상황별 추천. 24시간 당일 예약 가능 ☎ 010-9778-8571',
+    ogDescription: '강남 하이퍼블릭 통합 정보 사이트. 달토, 퍼펙트, 유앤미, 도파민, 엘리트, 디저트 예약 안내.',
   },
   en: {
-    title: 'Gangnam High Public Karaoke Booking | Dalto · Perfect · U&ME · Dopamine · Elite · Dessert',
-    description: "Gangnam karaoke & high public booking, all in one place. Dalto, Perfect, U&ME, Dopamine, Elite, Dessert — recommendations for every occasion. Same-day booking 24/7 ☎ 010-9778-8571",
-    ogDescription: 'An integrated guide to Gangnam high public karaoke venues — Dalto, Perfect, U&ME, Dopamine, Elite, Dessert.',
+    title: 'Gangnam High Public KTV Booking | Dalto · Perfect · U&ME · Dopamine · Elite · Dessert',
+    description: "Gangnam KTV & high public booking, all in one place. Dalto, Perfect, U&ME, Dopamine, Elite, Dessert — recommendations for every occasion. Same-day booking 24/7 ☎ 010-9778-8571",
+    ogDescription: 'An integrated guide to Gangnam high public KTV venues — Dalto, Perfect, U&ME, Dopamine, Elite, Dessert.',
   },
-  zh: {
+  cn: {
     title: '江南高端包房KTV预约 | 달토·퍼펙트·유앤미·도파민·엘리트·디저트',
-    description: '江南卡拉OK·High Public一站式预约。달토·퍼펙트·유앤미·도파민·엘리트·디저트 6家场所按情况推荐。24小时全年无休当天可约 ☎ 010-9778-8571',
+    description: '江南KTV·High Public一站式预约。달토·퍼펙트·유앤미·도파민·엘리트·디저트 6家场所按情况推荐。24小时全年无休当天可约 ☎ 010-9778-8571',
     ogDescription: '江南高端包房KTV综合指南——달토、퍼펙트、유앤미、도파민、엘리트、디저트预约。',
   },
-  ja: {
-    title: '江南ハイパブリックカラオケ予約 | 달토·퍼펙트·유앤미·도파민·엘리트·디저트',
-    description: '江南カラオケ・ハイパブリック統合予約。달토·퍼펙트·유앤미·도파민·엘리트·디저트 6施設を状況別にご案内。24時間年中無休で当日予約可能 ☎ 010-9778-8571',
-    ogDescription: '江南ハイパブリックカラオケの総合案内サイト。달토、퍼펙트、유앤미、도파민、엘리트、디저트のご予約案内。',
+  jp: {
+    title: '江南ハイパブリックKTV予約 | 달토·퍼펙트·유앤미·도파민·엘리트·디저트',
+    description: '江南KTV・ハイパブリック統合予約。달토·퍼펙트·유앤미·도파민·엘리트·디저트 6施設を状況別にご案内。24時間年中無休で当日予約可能 ☎ 010-9778-8571',
+    ogDescription: '江南ハイパブリックKTVの総合案内サイト。달토、퍼펙트、유앤미、도파민、엘리트、디저트のご予約案内。',
   },
 }
 
@@ -43,19 +43,19 @@ const homeFaqs: Record<Lang, { question: string; answer: string }[]> = {
   ],
   en: [
     { question: "What's high public?", answer: 'High Public is an evolved, upscale form of entertainment built on instant selection in independent rooms — combining the privacy of a room salon with the fast pace of a public venue.' },
-    { question: 'How do I make a reservation?', answer: 'Call 010-9778-8571 or message KakaoTalk (alrep0410). Tell us your visit time, party size, and preferred venue style and we will guide you right away.' },
+    { question: 'How do I make a reservation?', answer: 'Call 010-9778-8571 or message us on WeChat, LINE, or WhatsApp. Tell us your visit time, party size, and preferred venue style and we will guide you right away.' },
     { question: 'Can I visit alone?', answer: 'Yes, solo visits are welcome. Every venue runs on a 1:1 matching system, so solo guests are never out of place.' },
     { question: 'Can foreigners use the service?', answer: 'Yes, we have dedicated staff fluent in English, Chinese, and Japanese.' },
   ],
-  zh: [
+  cn: [
     { question: 'High Public是什么？', answer: 'High Public是从公共场所发展而来的高级娱乐形式，采用独立空间即时挑选的结构，融合了包间会所的私密性和公共场所的快节奏。' },
-    { question: '如何预约？', answer: '请拨打电话(010-9778-8571)或添加KakaoTalk(alrep0410)咨询。告知到访时间、人数和偏好的场所风格，我们会尽快为您安排。' },
+    { question: '如何预约？', answer: '请拨打电话(010-9778-8571)或通过微信/LINE/WhatsApp咨询。告知到访时间、人数和偏好的场所风格，我们会尽快为您安排。' },
     { question: '可以一个人去吗？', answer: '可以，欢迎单人光顾。所有场所均采用一对一匹配模式，独自前往完全不会尴尬。' },
     { question: '外国人也可以使用吗？', answer: '可以，我们配有能用英语、中文、日语沟通的专属工作人员。' },
   ],
-  ja: [
+  jp: [
     { question: 'ハイパブリックとは何ですか？', answer: 'ハイパブリック(High Public)は퍼블릭から発展した上位の形態のエンターテインメントです。独立した空間での即時選択、ルームサロンのプライベート感と퍼블릭のスピーディーな進行が組み合わさっています。' },
-    { question: '予約方法は？', answer: 'お電話(010-9778-8571)またはKakaoTalk(alrep0410)でお問い合わせください。ご来店の時間、人数、ご希望の店舗スタイルをお知らせいただければ迅速にご案内します。' },
+    { question: '予約方法は？', answer: 'お電話(010-9778-8571)またはWeChat・LINE・WhatsAppでお問い合わせください。ご来店の時間、人数、ご希望の店舗スタイルをお知らせいただければ迅速にご案内します。' },
     { question: '一人で訪問しても大丈夫ですか？', answer: 'はい、お一人様の訪問も可能です。1対1マッチング制のため、お一人様のお客様も気兼ねなくご利用いただけます。' },
     { question: '外国人も利用できますか？', answer: 'はい、英語・中国語・日本語で対応できる専任スタッフを配置しています。' },
   ],
@@ -65,7 +65,7 @@ interface Props {
   params: { lang: Lang }
 }
 
-const ogLocale: Record<Lang, string> = { ko: 'ko_KR', en: 'en_US', zh: 'zh_CN', ja: 'ja_JP' }
+const ogLocale: Record<Lang, string> = { ko: 'ko_KR', en: 'en_US', cn: 'zh_CN', jp: 'ja_JP' }
 
 export function generateMetadata({ params }: Props): Metadata {
   const m = meta[params.lang] ?? meta.ko
@@ -78,8 +78,8 @@ export function generateMetadata({ params }: Props): Metadata {
       languages: {
         'ko-KR': BASE,
         'en-US': `${BASE}/en`,
-        'zh-CN': `${BASE}/zh`,
-        'ja-JP': `${BASE}/ja`,
+        'zh-CN': `${BASE}/cn`,
+        'ja-JP': `${BASE}/jp`,
       },
     },
     openGraph: {

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = '강남 하이퍼블릭 — 강남 하이퍼블릭 가라오케 예약'
+export const alt = '강남 하이퍼블릭 — 강남 하이퍼블릭 예약'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -20,7 +20,7 @@ export default async function Image() {
         }}
       >
         <div style={{ fontSize: 72, fontWeight: 900, color: 'white' }}>강남 하이퍼블릭</div>
-        <div style={{ fontSize: 28, color: '#FF2D78', marginTop: 16 }}>강남 하이퍼블릭 가라오케 예약 플랫폼</div>
+        <div style={{ fontSize: 28, color: '#FF2D78', marginTop: 16 }}>강남 하이퍼블릭 예약 플랫폼</div>
       </div>
     ),
     size

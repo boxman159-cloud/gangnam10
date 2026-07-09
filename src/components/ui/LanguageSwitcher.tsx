@@ -8,8 +8,8 @@ import { localizedPath } from '@/lib/i18n'
 const langs: { code: Lang; label: string; flag: string }[] = [
   { code: 'ko', label: '한국어', flag: '🇰🇷' },
   { code: 'en', label: 'EN', flag: '🇺🇸' },
-  { code: 'zh', label: '中文', flag: '🇨🇳' },
-  { code: 'ja', label: '日本語', flag: '🇯🇵' },
+  { code: 'cn', label: '中文', flag: '🇨🇳' },
+  { code: 'jp', label: '日本語', flag: '🇯🇵' },
 ]
 
 /** Strips the current locale prefix from a pathname, leaving the bare path. */

@@ -1,6 +1,6 @@
 import type { Lang } from '@/context/LanguageContext'
 
-export const LOCALES: Lang[] = ['ko', 'en', 'zh', 'ja']
+export const LOCALES: Lang[] = ['ko', 'en', 'cn', 'jp']
 
 /** Builds a link that stays within the given locale. Korean has no URL prefix. */
 export function localizedPath(lang: Lang, path: string = '/'): string {

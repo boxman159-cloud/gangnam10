@@ -14,26 +14,34 @@ const faqsMap: Record<string, FAQ[]> = {
   en: [
     { question: "What's the difference between High Public and a regular room salon?", answer: 'High Public offers instant selection in an independent-room setting, combining the privacy of a room salon with the fast pace of a public venue. All six of our venues operate on this model.' },
     { question: 'Do prices differ between venues?', answer: "Yes, pricing varies by each venue's scale and concept. Tell us your purpose and party size and we'll recommend a venue that fits your budget, with exact pricing confirmed at the time of enquiry." },
-    { question: 'Can I book on the same day?', answer: 'Yes, advance booking helps secure your preferred time slot, but same-day bookings and walk-ins are also welcome. Contact us by phone or KakaoTalk and we will assist you right away.' },
+    { question: 'Can I book on the same day?', answer: 'Yes, advance booking helps secure your preferred time slot, but same-day bookings and walk-ins are also welcome. Contact us by phone or messenger and we will assist you right away.' },
     { question: 'Is there an age restriction?', answer: "Entry is restricted to those aged 20 and above. A valid ID (national ID, driver's license, or passport) is required." },
   ],
-  zh: [
+  cn: [
     { question: 'High Public和普通包间会所有什么区别？', answer: 'High Public是在独立空间内即时挑选的模式，融合了包间会所的私密性与公共场所的快节奏。我们的6家场所均采用这一运营方式。' },
     { question: '不同场所的价格一样吗？', answer: '不一样，价格根据各场所的规模和定位有所不同。请告知到访目的和人数，我们会为您推荐符合预算的场所，具体价格在咨询时立即为您说明。' },
-    { question: '当天可以预约吗？', answer: '可以，提前预约有助于确保理想的时间段，但当天预约和到场同样欢迎。请通过电话或KakaoTalk联系我们，我们将立即为您安排。' },
+    { question: '当天可以预约吗？', answer: '可以，提前预约有助于确保理想的时间段，但当天预约和到场同样欢迎。请通过电话或即时通讯联系我们，我们将立即为您安排。' },
     { question: '有年龄限制吗？', answer: '仅限20岁及以上人士入场。必须携带有效身份证件（身份证、驾照或护照）。' },
   ],
-  ja: [
+  jp: [
     { question: 'ハイパブリックと一般的なルームサロンの違いは何ですか？', answer: 'ハイパブリックは独立した空間で即座に選択する形式で、ルームサロンのプライベート感と퍼블릭のスピーディーな進行が組み合わさっています。6施設すべてがこの方式で運営されています。' },
     { question: '店舗によって料金は違いますか？', answer: 'はい、店舗の規模やコンセプトによって料金が異なります。ご来店の目的と人数をお知らせいただければご予算に合った店舗をご案内し、正確な料金はお問い合わせ時にすぐにご案内します。' },
-    { question: '当日予約はできますか？', answer: 'はい、事前予約でご希望の時間帯を確保しやすくなりますが、当日のご予約・ご来店も歓迎しております。お電話またはKakaoTalkでご連絡いただければすぐにご案内します。' },
+    { question: '当日予約はできますか？', answer: 'はい、事前予約でご希望の時間帯を確保しやすくなりますが、当日のご予約・ご来店も歓迎しております。お電話またはメッセンジャーでご連絡いただければすぐにご案内します。' },
     { question: '年齢制限はありますか？', answer: '満20歳以上のみ入場可能です。身分証明書（住民票、運転免許証、パスポート）の持参が必須です。' },
   ],
+}
+
+const contactHref: Record<string, string> = {
+  ko: 'https://open.kakao.com',
+  en: 'https://wa.me/821097788571',
+  cn: 'https://wa.me/821097788571',
+  jp: 'https://wa.me/821097788571',
 }
 
 export default function FAQSection() {
   const { lang, t } = useLanguage()
   const faqs = faqsMap[lang] ?? faqsMap.ko
+  const href = contactHref[lang] ?? contactHref.ko
 
   return (
     <section id="faq" className="max-w-3xl mx-auto px-4 sm:px-6 py-24">
@@ -48,7 +56,7 @@ export default function FAQSection() {
 
       <div className="mt-10 text-center">
         <p className="text-gray-500 text-sm mb-4">{t('faq.moreQuestion')}</p>
-        <a href="https://open.kakao.com" target="_blank" rel="noopener noreferrer"
+        <a href={href} target="_blank" rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-black font-bold px-6 py-3 rounded-xl transition-colors text-sm">
           {t('faq.kakao')}
         </a>

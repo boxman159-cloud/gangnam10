@@ -13,8 +13,8 @@ const BASE = 'https://gangnam10.com'
 
 const meta: Record<Lang, { title: string; description: string; ogDescription: string }> = {
   ko: {
-    title: '강남 하이퍼블릭 예약 | 달토·퍼펙트·유앤미·도파민·엘리트·디저트',
-    description: '강남 하이퍼블릭 통합 예약. 달토·퍼펙트·유앤미·도파민·엘리트·디저트 6곳 상황별 추천. 24시간 당일 예약 가능 ☎ 010-9778-8571',
+    title: '강남 하이퍼블릭 | 달토·퍼펙트·유앤미·도파민·엘리트·디저트',
+    description: '강남 하이퍼블릭. 달토·퍼펙트·유앤미·도파민·엘리트·디저트 6곳 상황별 추천. 24시간 당일 예약 가능 ☎ 010-9778-8571',
     ogDescription: '강남 하이퍼블릭 통합 정보 사이트. 달토, 퍼펙트, 유앤미, 도파민, 엘리트, 디저트 예약 안내.',
   },
   en: {
@@ -71,7 +71,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const m = meta[params.lang] ?? meta.ko
   const canonical = `${BASE}${localizedPath(params.lang, '/')}`
   return {
-    title: m.title,
+    title: { absolute: m.title },
     description: m.description,
     alternates: {
       canonical,

@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${BASE}${localizedPath(params.lang, `/venues/${venue.id}`)}`
 
   return {
-    title: `${name} ${l.titleSuffix} | 강남 하이퍼블릭`,
+    title: { absolute: `${name} ${l.titleSuffix} | 강남 하이퍼블릭` },
     description: `${name}(${venue.nameEn}). ${venue.location}. ${desc.slice(0, 100)}`,
     keywords: [
       venue.name, venue.nameEn, `${venue.name} 예약`, `${venue.location} 하이퍼블릭`,
